@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.Login"
+    android:background="@drawable/denglu">
+
+    <LinearLayout
+        android:id="@+id/login_tou11"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#50009788"
+        >
+        <ImageView
+            android:id="@+id/login_btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:src="@drawable/fanjiaotou"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:fontFamily="微软雅黑"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:paddingLeft="90dp"
+            android:layout_gravity="center"
+            android:text="登录"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_tou_layout"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/login_tou11"
+        android:singleLine="true"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/Login_tou"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/logo"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/login_edit_account"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:background="@drawable/bg_edittext"
+        android:fontFamily="微软雅黑"
+        android:layout_below="@+id/login_tou_layout"
+        android:hint="请输入手机号或邮箱"
+        android:textColorHint="#e2e1e1"
+        android:textCursorDrawable="@drawable/edit_cursor_color1"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/login_edit_pwd"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:drawableLeft="@android:drawable/ic_lock_lock"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:maxLength="20"
+        android:textColorHint="#e2e1e1"
+        android:textCursorDrawable="@drawable/edit_cursor_color1"
+        android:fontFamily="微软雅黑"
+        android:textColor="#fff"
+        android:background="@drawable/bg_edittext"
+        android:hint="请输入您的密码"
+        android:layout_below="@+id/login_edit_account"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/login_text_change_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="忘记密码?"
+        android:layout_below="@+id/login_edit_pwd"
+        android:layout_marginTop="10dp"
+        android:fontFamily="微软雅黑"
+        android:textColor="#0134fd"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentEnd="true"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/login_btn_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_selector"
+        android:padding="10dp"
+        android:fontFamily="华文行楷"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/login_edit_pwd"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/login_register"
+        android:text="还没账户？"
+        android:layout_width="120dp"
+
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:gravity="right"
+        android:fontFamily="微软雅黑"
+
+        android:textSize="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/login_btn_login"
+        android:layout_toLeftOf="@+id/login_register_shu"
+
+        />
+
+    <TextView
+        android:id="@+id/login_register_shu"
+        android:text="▏"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:gravity="right"
+        android:fontFamily="微软雅黑"
+
+        android:textSize="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/login_btn_login"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="-15dp"
+        android:layout_toLeftOf="@+id/login_btn_register"
+        />
+
+    <TextView
+        android:id="@+id/login_btn_register"
+        android:text="立即注册"
+        android:layout_width="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:textColor="#0134fd"
+        android:layout_alignParentRight="true"
+        android:fontFamily="微软雅黑"
+        android:gravity="left"
+        android:textSize="17dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/login_btn_login"
+        />
+</RelativeLayout>

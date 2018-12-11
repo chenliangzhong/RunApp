@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_news"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_news"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/news" />
+
+        <TextView
+            android:id="@+id/tv_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            android:fontFamily="微软雅黑"
+            android:textColor="#666666"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dynamic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/dynamic" />
+        <TextView
+            android:id="@+id/tv_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动态"
+            android:fontFamily="微软雅黑"
+            android:textColor="#666666"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_errand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_errand"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/errand" />
+        <TextView
+            android:id="@+id/tv_errand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快跑"
+            android:fontFamily="微软雅黑"
+            android:textColor="#666666"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_finding"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/iv_finding"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/finding" />
+
+        <TextView
+            android:id="@+id/tv_finding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="招领"
+            android:fontFamily="微软雅黑"
+            android:textColor="#666666"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_secondhand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_secondhand"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/secondhand" />
+
+        <TextView
+            android:id="@+id/tv_secondhand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二手"
+            android:fontFamily="微软雅黑"
+            android:textColor="#666666"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
